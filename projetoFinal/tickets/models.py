@@ -1,9 +1,11 @@
+from django.contrib.auth.models import User
 from django.db import models
 
+
 class Tickets(models.Model):
-    #nome = models.CharField(max_length=150)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     descricao = models.TextField()
-    dataCriacao = models.DateField
+    dataCriacao = models.DateTimeField
     dataFim = models.DateField
     status = models.CharField(max_length=12)
 

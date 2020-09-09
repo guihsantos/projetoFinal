@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'tickets',
     'ferias',
     'painelInformacoes',
-    'feedback',
+    'feedBack',
 ]
 
 MIDDLEWARE = [
